@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.f6d0d3fb.chunk.css",
-    "main.js": "/static/js/main.72ea568d.chunk.js",
-    "main.js.map": "/static/js/main.72ea568d.chunk.js.map",
+    "main.js": "/static/js/main.ed7a0735.chunk.js",
+    "main.js.map": "/static/js/main.ed7a0735.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.0a96fa0f.js",
     "runtime-main.js.map": "/static/js/runtime-main.0a96fa0f.js.map",
     "static/css/2.060a8437.chunk.css": "/static/css/2.060a8437.chunk.css",
@@ -45,7 +45,7 @@
     "static/js/17.27e08668.chunk.js": "/static/js/17.27e08668.chunk.js",
     "static/js/17.27e08668.chunk.js.map": "/static/js/17.27e08668.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.8476b0545bb59c5eeb7893ed4f4be6ad.js": "/precache-manifest.8476b0545bb59c5eeb7893ed4f4be6ad.js",
+    "precache-manifest.fe7a2a330237b407529851645865ad18.js": "/precache-manifest.fe7a2a330237b407529851645865ad18.js",
     "service-worker.js": "/service-worker.js",
     "static/css/10.0e762816.chunk.css.map": "/static/css/10.0e762816.chunk.css.map",
     "static/css/11.d5ae4f92.chunk.css.map": "/static/css/11.d5ae4f92.chunk.css.map",
@@ -75,7 +75,7 @@
     "static/media/google-tag-manager.svg": "/static/media/google-tag-manager.0990d9e9.svg",
     "static/media/google_analytics.svg": "/static/media/google_analytics.95a87f80.svg",
     "static/media/himank.jpeg": "/static/media/himank.7e455587.jpeg",
-    "static/media/keshav.jfif": "/static/media/keshav.0e99a8e8.jfif",
+    "static/media/keshav.jpg": "/static/media/keshav.3b18b52f.jpg",
     "static/media/naman.jpeg": "/static/media/naman.1a0b1ff9.jpeg",
     "static/media/nsut-logo-1800x1800.png": "/static/media/nsut-logo-1800x1800.86320354.png",
     "static/media/nsut-logo-new.png": "/static/media/nsut-logo-new.76a0dfb2.png",
@@ -92,6 +92,6 @@
     "static/css/2.060a8437.chunk.css",
     "static/js/2.83d91dda.chunk.js",
     "static/css/main.f6d0d3fb.chunk.css",
-    "static/js/main.72ea568d.chunk.js"
+    "static/js/main.ed7a0735.chunk.js"
   ]
 }
