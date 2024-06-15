@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.39f46e17.chunk.css",
-    "main.js": "/static/js/main.f637feac.chunk.js",
-    "main.js.map": "/static/js/main.f637feac.chunk.js.map",
+    "main.js": "/static/js/main.852f2abd.chunk.js",
+    "main.js.map": "/static/js/main.852f2abd.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.34bf189e.js",
     "runtime-main.js.map": "/static/js/runtime-main.34bf189e.js.map",
     "static/css/2.88acab05.chunk.css": "/static/css/2.88acab05.chunk.css",
@@ -48,7 +48,7 @@
     "static/js/18.5f978350.chunk.js": "/static/js/18.5f978350.chunk.js",
     "static/js/18.5f978350.chunk.js.map": "/static/js/18.5f978350.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.f70d79f5aed6a808852d248ced1954da.js": "/precache-manifest.f70d79f5aed6a808852d248ced1954da.js",
+    "precache-manifest.545d6ca17098afc15fb89042b9e55742.js": "/precache-manifest.545d6ca17098afc15fb89042b9e55742.js",
     "service-worker.js": "/service-worker.js",
     "static/css/11.e1b3ccef.chunk.css.map": "/static/css/11.e1b3ccef.chunk.css.map",
     "static/css/12.0467d68d.chunk.css.map": "/static/css/12.0467d68d.chunk.css.map",
@@ -85,6 +85,7 @@
     "static/media/nsut-logo-new.6178c3b0.png": "/static/media/nsut-logo-new.6178c3b0.png",
     "static/media/old_update.svg": "/static/media/old_update.1adfd22f.svg",
     "static/media/plus-solid.svg": "/static/media/plus-solid.d4055c0a.svg",
+    "static/media/pranay.2fafd32d.jpeg": "/static/media/pranay.2fafd32d.jpeg",
     "static/media/register_bg_2.png": "/static/media/register_bg_2.4f2cb0ac.png",
     "static/media/samir.65a144dc.jpg": "/static/media/samir.65a144dc.jpg",
     "static/media/shubham.bd56088f.jpg": "/static/media/shubham.bd56088f.jpg",
@@ -95,6 +96,6 @@
     "static/css/2.88acab05.chunk.css",
     "static/js/2.91585ade.chunk.js",
     "static/css/main.39f46e17.chunk.css",
-    "static/js/main.f637feac.chunk.js"
+    "static/js/main.852f2abd.chunk.js"
   ]
 }
