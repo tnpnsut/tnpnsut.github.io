@@ -1,14 +1,14 @@
 {
-    "name": "TNP NSUT",
-    "short_name": "TNP NSUT",
+    "name": "Volt React Dashboard",
+    "short_name": "Volt React Dashboard",
     "icons": [
         {
-            "src": "/nsut-logo-1800x1800.png",
+            "src": "/android-chrome-192x192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/nsut-logo-1800x1800.png",
+            "src": "/android-chrome-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
         }

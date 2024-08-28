@@ -1,6 +1,6 @@
 {
-  "name": "TNP NSUT",
-  "short_name": "TNP NSUT",
+  "name": "Volt React Dashboard",
+  "short_name": "Volt React Dashboard",
   "icons": [
     {
       "src": "/docs/4.3/assets/img/favicons/android-chrome-192x192.png",
@@ -12,3 +12,9 @@
       "sizes": "512x512",
       "type": "image/png"
     }
+  ],
+  "start_url": "/?utm_source=a2hs",
+  "theme_color": "#563d7c",
+  "background_color": "#563d7c",
+  "display": "standalone"
+}
