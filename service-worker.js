@@ -11,29 +11,59 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+self.addEventListener("push", (event) => {
+  try {
+    if (!event.data) {
+      //   console.error("Push event triggered but no data found.");
+      return;
+    }
 
-importScripts(
-  "/precache-manifest.454bf7e6c508d8db49aec702c5e82913.js"
-);
+    const data = event.data.json();
+    // console.log("Push received:", data);
 
-self.addEventListener('message', (event) => {
-  if (event.data && event.data.type === 'SKIP_WAITING') {
-    self.skipWaiting();
+    const options = {
+      body: data.body || "You have a new notification.",
+      icon:
+        data.icon ||
+        "https://upload.wikimedia.org/wikipedia/en/thumb/e/e9/Netaji_Subhas_University_of_Technology.svg/1200px-Netaji_Subhas_University_of_Technology.svg.png",
+      badge:
+        data.badge ||
+        "https://upload.wikimedia.org/wikipedia/en/thumb/e/e9/Netaji_Subhas_University_of_Technology.svg/1200px-Netaji_Subhas_University_of_Technology.svg.png",
+      actions: data.actions || [],
+      data: data.url || "/",
+      requireInteraction: data.requireInteraction || false,
+      timestamp: data.timestamp || Date.now(),
+    };
+
+    // Show the notification
+    self.registration.showNotification(
+      data.title || "New Notification",
+      options
+    );
+  } catch (error) {
+    // console.error("Error handling push event:", error);
   }
 });
 
-workbox.core.clientsClaim();
+// Handle notification clicks
+self.addEventListener("notificationclick", (event) => {
+  event.notification.close();
 
-/**
- * The workboxSW.precacheAndRoute() method efficiently caches and responds to
- * requests for URLs in the manifest.
- * See https://goo.gl/S9QRab
- */
-self.__precacheManifest = [].concat(self.__precacheManifest || []);
-workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
-
-workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/index.html"), {
-  
-  blacklist: [/^\/_/,/\/[^/?]+\.[^/]+$/],
+  event.waitUntil(
+    clients
+      .matchAll({ type: "window", includeUncontrolled: true })
+      .then((clientList) => {
+        if (clientList.length > 0) {
+          let client = clientList[0];
+          for (let i = 0; i < clientList.length; i++) {
+            if (clientList[i].focused) {
+              client = clientList[i];
+              break;
+            }
+          }
+          return client.focus();
+        }
+        return clients.openWindow(event.notification.data);
+      })
+  );
 });
