@@ -1,16 +1,3 @@
-/**
- * Welcome to your Workbox-powered service worker!
- *
- * You'll need to register this file in your web app and you should
- * disable HTTP caching for this file too.
- * See https://goo.gl/nhQhGp
- *
- * The rest of the code is auto-generated. Please don't update this file
- * directly; instead, make changes to your Workbox build configuration
- * and re-run your build process.
- * See https://goo.gl/2aRDsh
- */
-
 self.addEventListener("push", (event) => {
   try {
     if (!event.data) {
@@ -22,7 +9,7 @@ self.addEventListener("push", (event) => {
     // console.log("Push received:", data);
 
     const options = {
-      body: data?.head || "You have a new notification.",
+      body: data.body || "You have a new notification.",
       icon:
         data.icon ||
         "https://upload.wikimedia.org/wikipedia/en/thumb/e/e9/Netaji_Subhas_University_of_Technology.svg/1200px-Netaji_Subhas_University_of_Technology.svg.png",
