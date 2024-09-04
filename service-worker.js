@@ -9,7 +9,7 @@ self.addEventListener("push", (event) => {
     // console.log("Push received:", data);
 
     const options = {
-      body: data?.head || "You have a new notification.",
+      body: data.body || "You have a new notification.",
       icon:
         data.icon ||
         "https://upload.wikimedia.org/wikipedia/en/thumb/e/e9/Netaji_Subhas_University_of_Technology.svg/1200px-Netaji_Subhas_University_of_Technology.svg.png",
